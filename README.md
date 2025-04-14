@@ -68,7 +68,7 @@ Build a web application that enables users to generate and view simple visualiza
 - **Auto-detect plot type** and suggest enhancements or fix common mistakes in user code.
 - Implement **live collaboration** where two users can edit and visualize the same code.
 - Add **code templates** for beginners in both Python and R.
-- **Implement automated cleanup strategy** Although output files are currently stored in the backend and manually cleaned using cron jobs, we plan to integrate a more robust and configurable automated cleanup mechanism based on file age, size, or user quota in future releases.
+- **Implement automated cleanup strategy** Although output files are currently stored in the backend and manually cleaned, I plan to integrate a more robust and configurable automated cleanup mechanism based on file age, size in future.
 
 
 
