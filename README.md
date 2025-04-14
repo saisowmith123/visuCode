@@ -1,4 +1,4 @@
-# Language Agnostic Visualization Web Application
+# visuCode
 
 ## Objective
 
