@@ -1,0 +1,25 @@
+FROM python:3.10-slim
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libglib2.0-0 \
+    libsm6 \
+    libxrender1 \
+    libxext6 \
+    libfontconfig1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install common data viz + analysis libs
+RUN pip install --no-cache-dir \
+    matplotlib \
+    seaborn \
+    plotly \
+    pandas \
+    numpy \
+    scipy \
+    scikit-learn \
+    pillow
+
+WORKDIR /app
+CMD ["python", "-c", "import runpy; runpy.run_path('/app/script.py')"]
